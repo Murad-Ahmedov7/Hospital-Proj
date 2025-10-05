@@ -1,0 +1,10 @@
+
+.navlink{
+    color: #374151;
+    TRA
+}
+
+.navlink:hover{
+    color: #2563eb;
+    transform: scale(1.25);
+}

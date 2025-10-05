@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.font-mulish {
+  font-family: 'Mulish', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
