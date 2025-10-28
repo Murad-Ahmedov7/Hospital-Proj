@@ -1,0 +1,12 @@
+.animateScroll {
+  animation: scroll 4m linear infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-25%); } /* -50% = original array uzunluğu */
+}
+
+.animateScroll:hover {
+  animation-play-state: paused;
+}

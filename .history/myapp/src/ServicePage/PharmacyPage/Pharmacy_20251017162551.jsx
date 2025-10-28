@@ -1,0 +1,28 @@
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "react-feather";
+export default function Pharmacy() {
+  const slides = [
+    "/images/pexels-photo-691668.jpeg",
+    "/images/pexels-christian-heitz-285904-842711.jpg",
+    "/images/pexels-photo-1525041.jpeg",
+  ];
+
+  const [curr,setCurr]=useState(0)
+
+  const prev=
+  return (
+    <div className="max-w-3xl  relative flex overflow-hidden top-22">
+      {slides.map((s) => (
+        <img src={s} alt="Image not available" />
+      ))}
+      <div className="flex absolute items-center justify-between w-full top-[50%] px-7">
+        <button>
+          <ChevronLeft size={40} className=" bg-white/80 shadow rounded-full  text-gray-800 hover:bg-white"/>
+        </button>
+        <button>
+          <ChevronRight size={40} className=" bg-white/80 shadow rounded-full  text-gray-800 hover:bg-white" />
+        </button>
+      </div>
+    </div>
+  );
+}

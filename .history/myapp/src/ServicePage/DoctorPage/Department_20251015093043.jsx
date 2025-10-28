@@ -1,0 +1,105 @@
+import { useEffect } from 'react';
+
+
+export default function Department() {
+
+  const Departments=[
+     {
+       id: 1,
+       title: "Search Doctor",
+       desc: "Choose your doctor from thousands of specialist, general, and trusted hospitals",
+       color: "bg-red-600",
+       img: "/images/Frame.png",
+       width: "w-[100px]",
+       height: "h-[100px]",
+       Link:"services/doctor"
+     },
+
+        {
+       id: 2,
+       title: "Search Doctor",
+       desc: "Choose your doctor from thousands of specialist, general, and trusted hospitals",
+       color: "bg-red-600",
+       img: "/images/Frame.png",
+       width: "w-[100px]",
+       height: "h-[100px]",
+       Link:"services/doctor"
+     },
+
+        {
+       id: 3,
+       title: "Search Doctor",
+       desc: "Choose your doctor from thousands of specialist, general, and trusted hospitals",
+       color: "bg-red-600",
+       img: "/images/Frame.png",
+       width: "w-[100px]",
+       height: "h-[100px]",
+       Link:"services/doctor"
+     },
+        {
+       id: 4,
+       title: "Search Doctor",
+       desc: "Choose your doctor from thousands of specialist, general, and trusted hospitals",
+       color: "bg-red-600",
+       img: "/images/Frame.png",
+       width: "w-[100px]",
+       height: "h-[100px]",
+       Link:"services/doctor"
+     },
+        {
+       id: 5,
+       title: "Search Doctor",
+       desc: "Choose your doctor from thousands of specialist, general, and trusted hospitals",
+       color: "bg-red-600",
+       img: "/images/Frame.png",
+       width: "w-[100px]",
+       height: "h-[100px]",
+       Link:"services/doctor"
+     },
+        {
+       id: 6,
+       title: "Search Doctor",
+       desc: "Choose your doctor from thousands of specialist, general, and trusted hospitals",
+       color: "bg-red-600",
+       img: "/images/Frame.png",
+       width: "w-[100px]",
+       height: "h-[100px]",
+       Link:"services/doctor"
+     },
+        {
+       id: 7,
+       title: "Search Doctor",
+       desc: "Choose your doctor from thousands of specialist, general, and trusted hospitals",
+       color: "bg-red-600",
+       img: "/images/Frame.png",
+       width: "w-[100px]",
+       height: "h-[100px]",
+       Link:"services/doctor"
+     },
+
+      {
+       id: 8,
+       title: "Search Doctor",
+       desc: "Choose your doctor from thousands of specialist, general, and trusted hospitals",
+       color: "bg-red-600",
+       img: "/images/Frame.png",
+       width: "w-[100px]",
+       height: "h-[100px]",
+       Link:"services/doctor"
+     },
+
+
+  ]
+  return (
+    <div className='relative'>
+          <img src="/images/surgeryimg.jpg" alt="This picture is not found" />
+        <div className="absolute inset-0 bg-[#3AA6B9]/90  z-0"></div>
+
+        <div>
+
+        </div>
+          <div className='bg-red-400'></div>  
+    </div>
+
+  );
+}
