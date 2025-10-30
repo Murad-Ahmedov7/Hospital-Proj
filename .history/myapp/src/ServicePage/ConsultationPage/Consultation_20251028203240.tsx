@@ -35,9 +35,7 @@ export default function Consultation() {
 
            <form>
 
-        <div className="flex flex-col gap-6">
-            
-              <div className="flex gap-20">
+            <div className="flex gap-20">
 
               <div className="flex flex-col gap-2">
               <label className="font-semibold">NAME</label>
@@ -50,60 +48,13 @@ export default function Consultation() {
               <label className="font-semibold">EMAIL ADDRESS</label>
               <input type="email" placeholder="Your Email"></input>
                    <div className="border-b-1 border-black"></div>  
-
-                   
-              </div>
-                   
-           
-            </div>
-
-  <div className="flex gap-20">
-
-              <div className="flex flex-col gap-2">
-              <label className="font-semibold">NAME</label>
-              <input type="text" placeholder="Your Name"></input>
-              <div className="border-b-1 border-black"></div>
-              </div>
-
-        
-              <div className="flex flex-col gap-2">
-              <label className="font-semibold">EMAIL ADDRESS</label>
-              <input type="email" placeholder="Your Email"></input>
-                   <div className="border-b-1 border-black"></div>  
-                   
               </div>
 
               
-                   
-           
-            </div>
-
-
-              <div className="flex gap-20">
-
-              <div className="flex flex-col gap-2">
-              <label className="font-semibold">NAME</label>
-              <input type="text" placeholder="Your Name"></input>
-              <div className="border-b-1 border-black"></div>
-              </div>
-
-        
-              <div className="flex flex-col gap-2">
-              <label className="font-semibold">EMAIL ADDRESS</label>
-              <input type="email" placeholder="Your Email"></input>
-                   <div className="border-b-1 border-black"></div>  
-                   
-              </div>
 
               
-                   
            
             </div>
-
-
-
-
-        </div>
 
            </form>
 

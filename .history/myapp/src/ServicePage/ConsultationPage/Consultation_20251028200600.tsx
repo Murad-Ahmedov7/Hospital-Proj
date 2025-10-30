@@ -12,15 +12,15 @@ export default function Consultation() {
   //   console.log(data);
   // };
   return (
-    <div className="relative w-screen min-h-screen flex items-center justify-center  overflow-hidden r  pb-4">
+    <div className="relative w-screen min-h-screen  pt-10">
       <img
         src="/images/consultation.jpg"
         alt="This picture is not found"
-        className="object-cover w-full h-full absolute inset-0"
+        className="object-cover w-full min-h-screen absolute inset-0"
       />
-          <div className="absolute inset-0 bg-black/75"></div>
+          <div className="absolute  bg-black/75"></div>
 
-      <div className=" flex  justify-center   absolute    w-screen h-[640px] mt-20 overflow-hidden">
+      <div className=" flex  justify-center  absolute    w-screen h-[700px] mt-20 overflow-hidden">
 
 
         <div className=" bg-white w-[558px] h-[812px] "> {/* umumi col div */}
@@ -35,9 +35,7 @@ export default function Consultation() {
 
            <form>
 
-        <div className="flex flex-col gap-6">
-            
-              <div className="flex gap-20">
+            <div className="flex gap-4">
 
               <div className="flex flex-col gap-2">
               <label className="font-semibold">NAME</label>
@@ -49,61 +47,10 @@ export default function Consultation() {
               <div className="flex flex-col gap-2">
               <label className="font-semibold">EMAIL ADDRESS</label>
               <input type="email" placeholder="Your Email"></input>
-                   <div className="border-b-1 border-black"></div>  
-
-                   
+                   <div className="border-b-1 border-black/30"></div>  
               </div>
-                   
            
             </div>
-
-  <div className="flex gap-20">
-
-              <div className="flex flex-col gap-2">
-              <label className="font-semibold">NAME</label>
-              <input type="text" placeholder="Your Name"></input>
-              <div className="border-b-1 border-black"></div>
-              </div>
-
-        
-              <div className="flex flex-col gap-2">
-              <label className="font-semibold">EMAIL ADDRESS</label>
-              <input type="email" placeholder="Your Email"></input>
-                   <div className="border-b-1 border-black"></div>  
-                   
-              </div>
-
-              
-                   
-           
-            </div>
-
-
-              <div className="flex gap-20">
-
-              <div className="flex flex-col gap-2">
-              <label className="font-semibold">NAME</label>
-              <input type="text" placeholder="Your Name"></input>
-              <div className="border-b-1 border-black"></div>
-              </div>
-
-        
-              <div className="flex flex-col gap-2">
-              <label className="font-semibold">EMAIL ADDRESS</label>
-              <input type="email" placeholder="Your Email"></input>
-                   <div className="border-b-1 border-black"></div>  
-                   
-              </div>
-
-              
-                   
-           
-            </div>
-
-
-
-
-        </div>
 
            </form>
 
