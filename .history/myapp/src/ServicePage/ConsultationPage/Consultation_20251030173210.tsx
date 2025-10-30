@@ -20,7 +20,7 @@ export default function Consultation() {
       />
           <div className="absolute inset-0 bg-black/75"></div>
 
-      <div className=" flex  justify-center   absolute    w-screen h-[670px] mt-20 overflow-hidden">
+      <div className=" flex  justify-center   absolute    w-screen h-[640px] mt-20 overflow-hidden">
 
 
         <div className=" bg-white w-[658px] h-[812px] "> {/* umumi col div */}
@@ -125,8 +125,8 @@ export default function Consultation() {
                 </div>
 
 
-                  <div className="flex gap-20 mt-3">
-                <button className="bg-cyan-400 rounded-full w-40 h-10">See availability</button>
+                  <div className="flex gap-20">
+                <button className="bg-cay">See availability</button>
               </div>
 
 

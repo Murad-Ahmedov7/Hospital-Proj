@@ -20,7 +20,7 @@ export default function Consultation() {
       />
           <div className="absolute inset-0 bg-black/75"></div>
 
-      <div className=" flex  justify-center   absolute    w-screen h-[670px] mt-20 overflow-hidden">
+      <div className=" flex  justify-center   absolute    w-screen h-[640px] mt-20 overflow-hidden">
 
 
         <div className=" bg-white w-[658px] h-[812px] "> {/* umumi col div */}
@@ -41,14 +41,14 @@ export default function Consultation() {
 
               <div className="flex flex-col gap-2">
               <label className="font-semibold">NAME</label>
-              <input className="border-b-1 border-gray-300  py-2 w-[240px]  outline-none  text-[#b4aab4]  focus:border-teal-500 focus:border-b-2 transition-all" type="text" placeholder="Your Name"></input>
+              <input className="border-b-1 border-gray-300  py-2 w-[240px]  outline-none focus:border-teal-500 focus:border-b-2 transition-all" type="text" placeholder="Your Name"></input>
               
               </div>
 
         
               <div className="flex flex-col gap-2">
               <label className="font-semibold">EMAIL ADDRESS</label>
-              <input className="border-b-1 border-gray-300  py-2 w-[240px]  outline-none  text-[#b4aab4]   focus:border-teal-500 focus:border-b-2 transition-all" type="email" placeholder="Your Email"></input>                 
+              <input className="border-b-1 border-gray-300  py-2 w-[240px]  outline-none focus:border-teal-500 focus:border-b-2 transition-all" type="email" placeholder="Your Email"></input>                 
               </div>
                    
            
@@ -58,19 +58,15 @@ export default function Consultation() {
 
               <div className="flex flex-col gap-1">
               <label className="font-semibold">PHONE</label>
-              <input type='text' className="border-b-1 border-gray-300 text-[#b4aab4]   py-2 w-[240px]   outline-none focus:border-teal-500 focus:border-b-2 transition-all" placeholder="Your Phone"></input>
+              <input type='text' className="border-b-1 border-gray-300  py-2 w-[240px]  outline-none focus:border-teal-500 focus:border-b-2 transition-all" placeholder="Your Phone"></input>
               </div>
 
         
               <div className="flex flex-col gap-2">
               <label className="font-semibold">TYPE OF SERVICES</label>
-                <select className="border-b-1 border-gray-300  text-[#b4aab4]   py-2 w-[240px]  outline-none">
-              <option value="">Any Service</option>
-              <option value="null1">Null1</option>
-              <option value="null2">Null2</option>
-              <option value="null3">Null3</option>
-              <option value="null4">Null4</option>  {/*optiona hover ver */}
-                </select>
+              <input type="email" placeholder="Your Email"></input>
+                
+                   
               </div>
 
               
@@ -82,22 +78,16 @@ export default function Consultation() {
               <div className="flex gap-20">
 
               <div className="flex flex-col gap-2">
-              <label className="font-semibold">STAFF</label>
-            <select className="border-b-1 border-gray-300  py-2 w-[240px]  outline-none text-[#b4aab4]">
-              <option value="">Select</option>
-              <option value="null1">Null1</option>
-              <option value="null2">Null2</option>
-              <option value="null3">Null3</option>
-              <option value="null4">Null4</option>  {/*optiona hover ver */}
-                </select>
-              
+              <label className="font-semibold">NAME</label>
+              <input type="text" placeholder="Your Name"></input>
+              <div className="border-b-1 border-black"></div>
               </div>
 
         
               <div className="flex flex-col gap-2">
-              <label className="font-semibold">Date</label>
-              <input className="border-b-1 border-gray-300  py-2 w-[240px]  outline-none focus:border-teal-500 focus:border-b-2 transition-all text-[#b4aab4]" type="text" placeholder="Date cedveli yarat "></input>
-             
+              <label className="font-semibold">EMAIL ADDRESS</label>
+              <input type="email" placeholder="Your Email"></input>
+                   <div className="border-b-1 border-black"></div>  
                    
               </div>
 
@@ -105,30 +95,6 @@ export default function Consultation() {
                    
            
             </div>
-
-                <div className="flex gap-20">
-
-              <div className="flex flex-col  ">
-              <label className="font-semibold">MESSAGE</label>
-              <textarea  className="border-b-1 border-gray-300 text-[#b4aab4] h-[90px] pt-3    w-[560px]   outline-none focus:border-teal-500 focus:border-b-2 transition-all" placeholder="Your Message"></textarea>
-              </div>
-
-
-
-            
-        
-
-
-              
-                   
-           
-                </div>
-
-
-                  <div className="flex gap-20 mt-3">
-                <button className="bg-cyan-400 rounded-full w-40 h-10">See availability</button>
-              </div>
-
 
 
 

@@ -125,7 +125,7 @@ export default function Consultation() {
                 </div>
 
 
-                  <div className="flex gap-20 mt-3">
+                  <div className="flex gap-20">
                 <button className="bg-cyan-400 rounded-full w-40 h-10">See availability</button>
               </div>
 

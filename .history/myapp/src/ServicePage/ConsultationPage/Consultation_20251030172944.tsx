@@ -20,7 +20,7 @@ export default function Consultation() {
       />
           <div className="absolute inset-0 bg-black/75"></div>
 
-      <div className=" flex  justify-center   absolute    w-screen h-[670px] mt-20 overflow-hidden">
+      <div className=" flex  justify-center   absolute    w-screen h-[640px] mt-20 overflow-hidden">
 
 
         <div className=" bg-white w-[658px] h-[812px] "> {/* umumi col div */}
@@ -110,24 +110,16 @@ export default function Consultation() {
 
               <div className="flex flex-col  ">
               <label className="font-semibold">MESSAGE</label>
-              <textarea  className="border-b-1 border-gray-300 text-[#b4aab4] h-[90px] pt-3    w-[560px]   outline-none focus:border-teal-500 focus:border-b-2 transition-all" placeholder="Your Message"></textarea>
+              <textarea  className="border-b-1 border-gray-300 text-[#b4aab4] h-[4  0px] pt-4   w-[560px]   outline-none focus:border-teal-500 focus:border-b-2 transition-all" placeholder="Your Message"></textarea>
               </div>
 
-
-
-            
         
 
 
               
                    
            
-                </div>
-
-
-                  <div className="flex gap-20 mt-3">
-                <button className="bg-cyan-400 rounded-full w-40 h-10">See availability</button>
-              </div>
+            </div>
 
 
 
