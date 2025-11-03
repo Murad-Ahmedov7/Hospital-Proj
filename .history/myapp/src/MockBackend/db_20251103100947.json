@@ -1,0 +1,25 @@
+{
+  "consult": [
+    {
+      "id": "45f6",
+      "name": "murad",
+      "email": "mrdhmdv04@gmail.com",
+      "phone": "051 2265096",
+      "service": "null3",
+      "staff": "null3",
+      "message": "ihhhhhhhhhhhhhhhhhhhhh"
+    }
+  ],
+  "doctorService": [
+    {
+      "0": "Cardiology",
+      "1": "Ophthalmology",
+      "2": "Pulmonary",
+      "3": "Dental",
+      "4": "Diagnostics",
+      "5": "For disabled",
+      "6": "Traumotoligy",
+      "7": "Laboratory"
+    }
+  ]
+}

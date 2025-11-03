@@ -1,0 +1,16 @@
+.animateScroll {
+  animation: scroll 7s linear infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-25%); } 
+}
+/* -50% = original array uzunluğu */
+
+
+/* .animateScroll:hover {
+  animation-play-state: paused;
+} */
+
+/* https://www.youtube.com/watch?v=jsB3_yI6p-0 */

@@ -1,0 +1,34 @@
+{
+  "consult": [
+    {
+      "id": "4bf1",
+      "name": "murad",
+      "email": "mrdhmdv04@gmail.com",
+      "phone": "0512265096",
+      "service": "Diagnostics",
+      "staff": "null2",
+      "message": "dsadasdsa"
+    },
+    {
+      "id": "63c8",
+      "name": "dsada",
+      "email": "mrdhmdv04@gmail.com",
+      "phone": "22222222222222",
+      "service": "Cardiology",
+      "staff": "null1",
+      "message": "dasdada"
+    }
+  ],
+  "doctorService": [
+    {
+      "0": "Cardiology",
+      "1": "Ophthalmology",
+      "2": "Pulmonary",
+      "3": "Dental",
+      "4": "Diagnostics",
+      "5": "For disabled",
+      "6": "Traumotoligy",
+      "7": "Laboratory"
+    }
+  ]
+}
