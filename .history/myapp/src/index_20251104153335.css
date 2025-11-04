@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.font-mulish {
+  font-family: 'Mulish', sans-serif;
+}
+
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+html {
+  scroll-behavior:smooth;
+    block: "end":
+}

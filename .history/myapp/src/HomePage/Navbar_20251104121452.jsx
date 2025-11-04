@@ -1,0 +1,52 @@
+import { replace, useLocation, useNavigate } from "react-router-dom";
+import styles from "./Navbar.module.css";
+import { useEffect } from "react";
+import { IoIosLogIn } from "react-icons/io";
+export default function Navbar() {
+
+ const links = [
+  { id: "home", name: "Home" },
+//   { id: "find-doctor", name: "Find a doctor" },
+  { id: "services", name: "Services" }, 
+  { id: "apps", name: "Apps" },
+  { id: "testimonials", name: "Testimonials" },
+  { id: "about-us", name: "About us" }
+];
+    const location=useLocation()
+    const navigate=useNavigate()
+
+const handleClick = (e) => {
+    if (location.pathname !== "/") {
+       e.preventDefault(); //eventin default davranisini bloklayir(duzdu?)
+      // Əgər path / deyilsə, /-a yönlendir
+      navigate("/");
+    } 
+  };
+  
+    return (
+
+
+        
+        <div className="flex gap-10 ml-2  justify-center  font-oswald text-[#1F1534]   fixed   w-full pr-[8%] h-14 pt-5 rounded-[30px]  z-20   ">
+           <div className=" lg:w-[24%] h-[200px] lg:mt-[-13px]   "><img className="w-[200px] h-[50px]" src="/images/mediflow-logo.png" alt="Image not found" /></div>
+        {
+            links.map((link)=>(
+                <a
+                    key={link.id}
+                     href={`#${link.id}`}
+                         onClick={(e) => handleClick(e)}
+                    className={styles.navlink}
+                >
+                    {link.name}
+                </a>    
+            ))
+        }
+        <button className="flex gap-3 ml-10 border-1 text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+            <IoIosLogIn  size={21}/>
+            <p className="font-semibold">Login</p>
+        </button>
+        </div>
+    )
+}
+
+

@@ -1,0 +1,11 @@
+
+.navlink{
+    color: #374151;
+  /* transition: transform 0.3s ease-out, color 0.3s ease-out; */
+     transition: all 0.3s ease-out;
+}
+
+.navlink:hover{
+    color: #2563eb;
+    transform: scale(1.25);
+}
