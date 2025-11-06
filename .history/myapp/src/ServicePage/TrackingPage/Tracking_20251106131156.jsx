@@ -68,7 +68,7 @@ export default function Tracking() {
 
 
   <div onClick={()=>handleCloseBtn()} className="flex items-center gap-2 cursor-pointer"> {/* toggle duymesi */}
-  <p className="  text-xl font-oswald font-bold ">Patient History</p>
+  <p className="  text-xl font-oswald font-bold  ">Patient History</p>
   {onClose?  <FaChevronDown size={24} />:<FaChevronUp size={24}/>}
   </div>
   
@@ -77,29 +77,16 @@ export default function Tracking() {
   !onClose&&(
     // <div className='flex flex-col'>Hello</div>
 
-<div className="w-full bg-white rounded-xl p-4 shadow-lg shadow-gray-400">
-  <table className="min-w-full divide-y h-[222px]    divide-gray-200">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Date</th>
-        <th>Service</th>
-      </tr>
-    </thead>
-    <tbody>
-      {allconsult.map(item => (
-        <tr className='' key={item.id}>
-          <td>{item.id}</td>  
-          <td>{item.name}</td>
-          <td>{item.email}</td>
-          <td>{item.date}</td>
-          <td>{item.service}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
+<div className="flex flex-col divide-y divide-gray-200">
+  {allconsult.map(item => (
+    <div key={item.id} className="flex justify-between p-3 hover:bg-gray-100">
+      <p>{item.id}</p>
+      <p>{item.name}</p>
+      <p>{item.email}</p>
+      <p>{item.date}</p>
+      <p>{item.service}</p>
+    </div>
+  ))}
 </div>
 
  

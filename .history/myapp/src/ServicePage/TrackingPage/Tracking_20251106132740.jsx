@@ -68,7 +68,7 @@ export default function Tracking() {
 
 
   <div onClick={()=>handleCloseBtn()} className="flex items-center gap-2 cursor-pointer"> {/* toggle duymesi */}
-  <p className="  text-xl font-oswald font-bold ">Patient History</p>
+  <p className="  text-xl font-oswald font-bold pb-4">Patient History</p>
   {onClose?  <FaChevronDown size={24} />:<FaChevronUp size={24}/>}
   </div>
   

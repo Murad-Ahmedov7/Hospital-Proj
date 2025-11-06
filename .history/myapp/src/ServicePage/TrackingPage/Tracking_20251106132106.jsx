@@ -68,7 +68,7 @@ export default function Tracking() {
 
 
   <div onClick={()=>handleCloseBtn()} className="flex items-center gap-2 cursor-pointer"> {/* toggle duymesi */}
-  <p className="  text-xl font-oswald font-bold ">Patient History</p>
+  <p className="  text-xl font-oswald font-bold  ">Patient History</p>
   {onClose?  <FaChevronDown size={24} />:<FaChevronUp size={24}/>}
   </div>
   
@@ -77,8 +77,8 @@ export default function Tracking() {
   !onClose&&(
     // <div className='flex flex-col'>Hello</div>
 
-<div className="w-full bg-white rounded-xl p-4 shadow-lg shadow-gray-400">
-  <table className="min-w-full divide-y h-[222px]    divide-gray-200">
+<div className="w-full bg-white rounded-xl p-4 shadow-lg">
+  <table className="min-w-full divide-y h-full   divide-gray-200">
     <thead>
       <tr>
         <th>ID</th>

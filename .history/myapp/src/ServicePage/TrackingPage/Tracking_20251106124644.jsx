@@ -58,64 +58,9 @@ export default function Tracking() {
 </div> */}
 
 
-<div className='w-screen h-screen caret-transparent bg-zinc-800 flex flex-col justify-center items-center gap-y-2'>  {/* umumi div */}
- 
-
+<div className='w-screen h-screen caret-transparent bg-zinc-800 flex flex-col justify-center items-center gap-y-2'>
   
-  <div className={` ${onClose?"h-1/9 w-[97%] flex items-center ":"h-4/6 w-5/6"} transition-all ease-in duration-1200 bg-white rounded-xl p-4 ` }>   {/* tablenin col divi */}
-
-
-
-
-  <div onClick={()=>handleCloseBtn()} className="flex items-center gap-2 cursor-pointer"> {/* toggle duymesi */}
-  <p className="  text-xl font-oswald font-bold ">Patient History</p>
-  {onClose?  <FaChevronDown size={24} />:<FaChevronUp size={24}/>}
-  </div>
-  
-
-  {
-  !onClose&&(
-    // <div className='flex flex-col'>Hello</div>
-
-<div className="w-full bg-white rounded-xl p-4 shadow-lg shadow-gray-400">
-  <table className="min-w-full divide-y h-[222px]    divide-gray-200">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Date</th>
-        <th>Service</th>
-      </tr>
-    </thead>
-    <tbody>
-      {allconsult.map(item => (
-        <tr className='' key={item.id}>
-          <td>{item.id}</td>  
-          <td>{item.name}</td>
-          <td>{item.email}</td>
-          <td>{item.date}</td>
-          <td>{item.service}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-</div>
-
- 
-  )
-}
-  
-  </div>
-
-</div>
-
-
-</>
-
-  )
-    
-}
+  <div className={` ${onClose?"h-1/14 w-full":"h-4/6 w-5/6"} transition-all ease-in-out duration-1000 bg-white rounded-xl p-4` }>
 
 
 
@@ -123,6 +68,27 @@ export default function Tracking() {
 
 
   </div> */}
+
+
+  <div onClick={()=>handleCloseBtn()} className="flex items-center gap-2 cursor-pointer">
+  <p className="  text-xl font-oswald font-bold  ">Patient History</p>
+  {onClose?  <FaChevronDown size={24} />:<FaChevronUp size={24}/>}
+  </div>
+
+
+
+  
+  </div>
+
+</div>
+
+
+</>
+  )
+    
+}
+
+
 
 
  // <div className="w-screen h-screen bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-700 flex flex-col justify-center items-center">
