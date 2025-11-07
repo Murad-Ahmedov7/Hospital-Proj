@@ -1,0 +1,119 @@
+{
+  "consult": [
+  {
+    "id": "1a11",
+    "name": "murad",
+    "email": "murad01@gmail.com",
+    "phone": "0501111111",
+    "service": "Laboratory",
+    "staff": "null1",
+    "date": "2025-11-01",
+    "message": "Hello there"
+  },
+  {
+    "id": "2b22",
+    "name": "elnur",
+    "email": "elnur02@gmail.com",
+    "phone": "0512222222",
+    "service": "Laboratory",
+    "staff": "null2",
+    "date": "2025-11-02",
+    "message": "Just testing data"
+  },
+  {
+    "id": "3c33",
+    "name": "samir",
+    "email": "samir03@gmail.com",
+    "phone": "0523333333",
+    "service": "Laboratory",
+    "staff": "null3",
+    "date": "2025-11-03",
+    "message": "Everything seems fine"
+  },
+  {
+    "id": "4d44",
+    "name": "nigar",
+    "email": "nigar04@gmail.com",
+    "phone": "0534444444",
+    "service": "Laboratory",
+    "staff": "null4",
+    "date": "2025-11-04",
+    "message": "Let’s move forward"
+  },
+  {
+    "id": "5e55",
+    "name": "adil",
+    "email": "adil05@gmail.com",
+    "phone": "0545555555",
+    "service": "Laboratory",
+    "staff": "null5",
+    "date": "2025-11-05",
+    "message": "Need some help"
+  },
+  {
+    "id": "6f66",
+    "name": "sara",
+    "email": "sara06@gmail.com",
+    "phone": "0556666666",
+    "service": "Laboratory",
+    "staff": "null6",
+    "date": "2025-11-06",
+    "message": "Working on project"
+  },
+  {
+    "id": "7g77",
+    "name": "emin",
+    "email": "emin07@gmail.com",
+    "phone": "0567777777",
+    "service": "Laboratory",
+    "staff": "null7",
+    "date": "2025-11-07",
+    "message": "Ready for meeting"
+  },
+  {
+    "id": "8h88",
+    "name": "leyla",
+    "email": "leyla08@gmail.com",
+    "phone": "0578888888",
+    "service": "Laboratory",
+    "staff": "null8",
+    "date": "2025-11-08",
+    "message": "Check the data"
+  },
+  {
+    "id": "9i99",
+    "name": "orxan",
+    "email": "orxan09@gmail.com",
+    "phone": "0589999999",
+    "service": "Laboratory",
+    "staff": "null9",
+    "date": "2025-11-09",
+    "message": "Please update soon"
+  },
+  {
+    "id": "10j10",
+    "name": "ayla",
+    "email": "ayla10@gmail.com",
+    "phone": "0591010101",
+    "service": "Laboratory",
+    "staff": "null10",
+    "date": "2025-11-10",
+    "message": "All done here"
+  }
+
+   
+  ],
+  "doctorService": [
+    {
+      "0": "Cardiology",
+      "1": "Ophthalmology",
+      "2": "Pulmonary",
+      "3": "Dental",
+      "4": "Diagnostics",
+      "5": "For disabled",
+      "6": "Traumotoligy",
+      "7": "Laboratory",
+      "id": "9722"
+    }
+  ]
+}
