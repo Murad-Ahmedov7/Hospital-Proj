@@ -66,36 +66,24 @@ const handleToggleSearch=()=>{
 
 useEffect(()=>{
 
-// const sortData=(type,data)=>{
-//   if(!type) return data;
-//   const [field,order]=type.split('-') // "name-asc" → ["name", "asc"]
+const sortData=(type,data)=>{
+  if(!type) return data;
+  const [field,order]=type.split('-') // "name-asc" → ["name", "asc"]
 
-//  return [...data].sort((a, b) => {
-//     const valA = a[field]?.toString() || "";
+ return [...data].sort((a, b) => {
+    const valA = a[field]?.toString() || "";
 
-//     const valB = b[field]?.toString() || "";
+    const valB = b[field]?.toString() || "";
 
-//   //   return order === "asc"
-//   //     ? valA.localeCompare(valB, undefined, { sensitivity: "base" })
-//   //     : valB.localeCompare(valA, undefined, { sensitivity: "base" });
-//   // });
-//       return order === "asc"
-//       ? valA.localeCompare(valB)
-//       : valB.localeCompare(valA);
-//   });
-// }
-
-
-const sortData = (type, data) => {
-  if (!type) return data;
-  const [field, order] = type.split("-");
-
-  return [...data].sort((a, b) => (
-    order === "asc"
-      ? (a[field]?.toString() || "").localeCompare(b[field]?.toString() || "")
-      : (b[field]?.toString() || "").localeCompare(a[field]?.toString() || "")
-  ));
-};
+  //   return order === "asc"
+  //     ? valA.localeCompare(valB, undefined, { sensitivity: "base" })
+  //     : valB.localeCompare(valA, undefined, { sensitivity: "base" });
+  // });
+      return order === "asc"
+      ? valA.localeCompare(valB)
+      : valB.localeCompare(valA);
+  });
+}
 
  const sorted=sortData(selectedType,allConsult)
 setSortedData(sorted);
@@ -104,38 +92,24 @@ setSortedData(sorted);
 console.log(searchText)
 
 
-// const searchData=()=>{
-//   allConsult.filter(item=>item.name.toLowerCase().includes(searchText.toLowerCase()))
-//   allConsult.filter(item=>item.email.toLowerCase().includes(searchText.toLowerCase()))
-//   allConsult.filter(item=>item.phone.toLowerCase().includes(searchText.toLowerCase()))
-//   allConsult.filter(item=>item.staff.toLowerCase().includes(searchText.toLowerCase()))
-//   allConsult.filter(item=>item.message.toLowerCase().includes(searchText.toLowerCase()))
-//   allConsult.filter(item=>item.service.toLowerCase().includes(searchText.toLowerCase()))
+const searchData=()=>{
+  allConsult.filter(item=>item.name.toLowerCase().includes(searchText.toLowerCase()))
+  allConsult.filter(item=>item.email.toLowerCase().includes(searchText.toLowerCase()))
+  allConsult.filter(item=>item.phone.toLowerCase().includes(searchText.toLowerCase()))
+  allConsult.filter(item=>item.staff.toLowerCase().includes(searchText.toLowerCase()))
+  allConsult.filter(item=>item.message.toLowerCase().includes(searchText.toLowerCase()))
+  allConsult.filter(item=>item.service.toLowerCase().includes(searchText.toLowerCase()))
 
 
 
 
-//   // allConsult.filter(item=>item.date.toLowerCase().includes(searchText.toLowerCase())) ????? filter de qaldi date ucun ve filter ile search bir yazmaq
+  // allConsult.filter(item=>item.date.toLowerCase().includes(searchText.toLowerCase())) ????? filter de qaldi date ucun ve filter ile search bir yazmaq
 
 
-// // https://chatgpt.com/c/690d96cc-56fc-832e-ab57-83d7418c6d78 yarimciq qaldi serach ona bax
+// https://chatgpt.com/c/690d96cc-56fc-832e-ab57-83d7418c6d78 yarimciq qaldi serach ona bax
 
 
-// }
-
-
-const filteredData = allConsult.filter((item) => {
-  const lowerSearch = searchText.toLowerCase();
-  return (
-    item.name.toLowerCase().includes(lowerSearch) ||
-    item.email.toLowerCase().includes(lowerSearch) ||
-    item.phone.toString().toLowerCase().includes(lowerSearch) ||
-    item.staff.toLowerCase().includes(lowerSearch) ||
-    item.message.toLowerCase().includes(lowerSearch) ||
-    item.service.toLowerCase().includes(lowerSearch) 
-    // istəsən date də əlavə edə bilərsən: || item.date.toLowerCase().includes(lowerSearch)
-  );
-});
+}
 
   return (
     <>
@@ -191,7 +165,6 @@ const filteredData = allConsult.filter((item) => {
                          <input value={searchText} onChange={(e)=>setSearchText(e.target.value)} placeholder="Search here" className="rounded-[11px] h-[40px]   border-2 "></input>
                        <button onClick={()=>{
                         setSearchOnClose(false)
-                        setSearchText('')
                        }}
                        >X</button>
                       </>
@@ -222,9 +195,7 @@ const filteredData = allConsult.filter((item) => {
                 </thead>
                 <tbody className="divide-y divide-gray-100">
                   
-                 {
-                  searchOnClose?(
-                     filteredData.map((item) => (
+                  {sortedData.map((item) => (
                     <tr
                       key={item.id}
                       className="hover:bg-blue-50 transition-all duration-200 cursor-pointer font-oswald"
@@ -246,33 +217,8 @@ const filteredData = allConsult.filter((item) => {
                       <td>N/A</td>
                       <td>N/A</td>
                     </tr>
-                  ))
+                  ))}
 
-                  ):
-                    sortedData.map((item) => (
-                    <tr
-                      key={item.id}
-                      className="hover:bg-blue-50 transition-all duration-200 cursor-pointer font-oswald"
-                    >
-                      <td className="px-4 py-3 text-gray-800">{item.id}</td>
-                      <td className="px-4 py-3">{item.name}</td>
-                      <td className="px-4 py-3">{item.email}</td>
-                      <td className="px-4 py-3">{item.phone}</td>
-                      <td className="px-4 py-3">{item.date}</td>
-                      <td className="px-4 py-3">{item.staff}</td>
-                      <td className="px-4 py-3">{item.message}</td>
-                      <td className="px-4 py-3 text-[#3AA6B9] font-bold">
-                        {item.service}
-                      </td>
-                     
-                        <td className="px-4 py-3  font-bold bg-yellow-50  ">🟨Pending</td>
-                  
-                      <td>N/A</td>
-                      <td>N/A</td>
-                      <td>N/A</td>
-                    </tr>
-                  ))
-                 }
                 </tbody>
               </table>
             </div>
@@ -282,12 +228,6 @@ const filteredData = allConsult.filter((item) => {
     </>
   );
 }
-
-
-// https://chatgpt.com/c/690d96cc-56fc-832e-ab57-83d7418c6d78
-
-
-//filter search bir islemesini kombinasiya et
 
 
 

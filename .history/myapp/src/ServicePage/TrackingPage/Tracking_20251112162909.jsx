@@ -284,9 +284,6 @@ const filteredData = allConsult.filter((item) => {
 }
 
 
-// https://chatgpt.com/c/690d96cc-56fc-832e-ab57-83d7418c6d78
-
-
 //filter search bir islemesini kombinasiya et
 
 

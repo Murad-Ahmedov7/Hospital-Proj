@@ -66,36 +66,24 @@ const handleToggleSearch=()=>{
 
 useEffect(()=>{
 
-// const sortData=(type,data)=>{
-//   if(!type) return data;
-//   const [field,order]=type.split('-') // "name-asc" → ["name", "asc"]
+const sortData=(type,data)=>{
+  if(!type) return data;
+  const [field,order]=type.split('-') // "name-asc" → ["name", "asc"]
 
-//  return [...data].sort((a, b) => {
-//     const valA = a[field]?.toString() || "";
+ return [...data].sort((a, b) => {
+    const valA = a[field]?.toString() || "";
 
-//     const valB = b[field]?.toString() || "";
+    const valB = b[field]?.toString() || "";
 
-//   //   return order === "asc"
-//   //     ? valA.localeCompare(valB, undefined, { sensitivity: "base" })
-//   //     : valB.localeCompare(valA, undefined, { sensitivity: "base" });
-//   // });
-//       return order === "asc"
-//       ? valA.localeCompare(valB)
-//       : valB.localeCompare(valA);
-//   });
-// }
-
-
-const sortData = (type, data) => {
-  if (!type) return data;
-  const [field, order] = type.split("-");
-
-  return [...data].sort((a, b) => (
-    order === "asc"
-      ? (a[field]?.toString() || "").localeCompare(b[field]?.toString() || "")
-      : (b[field]?.toString() || "").localeCompare(a[field]?.toString() || "")
-  ));
-};
+  //   return order === "asc"
+  //     ? valA.localeCompare(valB, undefined, { sensitivity: "base" })
+  //     : valB.localeCompare(valA, undefined, { sensitivity: "base" });
+  // });
+      return order === "asc"
+      ? valA.localeCompare(valB)
+      : valB.localeCompare(valA);
+  });
+}
 
  const sorted=sortData(selectedType,allConsult)
 setSortedData(sorted);
@@ -282,9 +270,6 @@ const filteredData = allConsult.filter((item) => {
     </>
   );
 }
-
-
-// https://chatgpt.com/c/690d96cc-56fc-832e-ab57-83d7418c6d78
 
 
 //filter search bir islemesini kombinasiya et
