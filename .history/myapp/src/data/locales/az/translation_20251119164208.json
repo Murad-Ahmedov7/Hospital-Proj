@@ -1,0 +1,21 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "apps": "Apps",
+    "testimonials": "Testimonials",
+    "about-us": "About Us",
+    "myShopping": {
+      "title": "My Shopping",
+      "balance": "Balance",
+      "compare": "Compare",
+      "basket": "Basket",
+      "favorites": "Favorites"
+    },
+
+  },
+  "home": {
+    "headline": "Virtual healthcare for you",
+    "description": "Mediflow provides progressive, and affordable healthcare, accessible on mobile and online for everyone"
+  }
+}

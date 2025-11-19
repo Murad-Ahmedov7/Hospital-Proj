@@ -1,0 +1,28 @@
+{
+  "navbar": {
+    "home": "Ana səhifə",
+    "services": "Xidmətlər",
+    "apps": "Tətbiqlər",
+    "testimonials": "Rəylər",
+    "about-us": "Haqqımızda",
+    "myShopping": {
+      "title": "Mənim Alış-verişim",
+      "balance": "Balans",
+      "compare": "Müqayisə",
+      "basket": "Səbət",
+      "favorites": "Favoritlər"
+    },
+    "signup": "Sign Up"
+  },
+  "home": {
+    "headline": "Sizin üçün virtual səhiyyə",
+    "description": "Mediflow irəliləyişçi və əlçatan səhiyyə xidmətləri təqdim edir, hər kəs üçün mobil və onlayn istifadə oluna bilər"
+  }
+
+
+
+
+
+  
+  
+}

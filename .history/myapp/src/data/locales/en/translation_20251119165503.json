@@ -1,0 +1,25 @@
+{
+  "navbar": {
+    "home": "Ana səhifə",
+    "services": "Xidmətlər",
+    "apps": "Tətbiqlər",
+    "testimonials": "Rəylər",
+    "about-us": "Haqqımızda",
+    "myShopping": {
+      "title": "My Shopping",
+      "balance": "Balans",
+      "compare": "Müqayisə",
+      "basket": "Səbət",
+      "favorites": "Favoritlər"
+    },
+    "signup": "Sign Up"
+  },
+  "home": {
+    "headline": "Sizin üçün virtual səhiyyə",
+    "description": "Mediflow irəliləyişçi və əlçatan səhiyyə xidmətləri təqdim edir, hər kəs üçün mobil və onlayn istifadə oluna bilər"
+  },
+  "services": {
+    "headline": "Our Services",
+    "description": "We provide to you the best choices for you. Adjust it to your health needs and make sure you undergo treatment with our highly qualified doctors to consult which type of service is suitable for your health."
+  }
+}

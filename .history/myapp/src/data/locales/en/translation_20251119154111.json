@@ -1,0 +1,12 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "apps": "Apps",
+    "testimonials": "Testimonials",
+    "about-us": "About Us"
+  },
+ 
+  "signup": "Sign Up",
+  
+}
