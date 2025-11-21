@@ -3,7 +3,7 @@ import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { Link } from "react-router-dom";
 export default function PopularCategories({categories}) {
   return (
-    <div className="flex flex-col justify-center items-center h-[500px] lg:h-[600px]     ">
+    <div className="flex flex-col justify-center items-center min-h-[500px]     ">
 
       <div className="flex flex-col justify-center items-center lg:mt-5   ">
          <p className="text-gray-600 text-2xl font-bold">Top Choices</p>

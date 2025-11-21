@@ -12,7 +12,7 @@ export default function PopularCategories({categories}) {
 
       {/* font-size: clamp(0.75rem, 0.25rem + 0.7813vw, 1.5rem); */}
 
-      <div className="flex gap-7 lg:min-w-[600px] lg:max-w-[1000px]  xl:min-w-[800px] xl:max-w-[1040px] 2xl:min-w-[800px] 2xl:max-w-[1500px] ">
+      <div className="flex gap-7 lg:min-w-[600px] lg:max-w-[1000px]  xl:min-w-[800px] xl:max-w-[1040px]  2xl:w-[20  00px] ">
         {categories.map((c) => (
           <div className="relative flex justify-center group ">
             <img  
