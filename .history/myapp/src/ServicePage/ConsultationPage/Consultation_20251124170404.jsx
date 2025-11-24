@@ -88,7 +88,7 @@ export default function Consultation() {
       />
           <div className="absolute inset-0 bg-black/75"></div>
 
-      <div className=" flex  justify-center   absolute    xl:w-screen 2xl:h-[750px] h-[550px] lg:w-[1010px]   mt-20 2xl:overflow-hidden overflow-y-scroll "> {/*overflow-y-auto*/}  {/*scrool gorunmur*/} 
+      <div className=" flex  justify-center   absolute    xl:w-screen 2xl:h-[750px] h-[550px] lg:w-[1010px]   mt-20 2xl:overflow-hidden overflow-y-scroll "> {/*overflow-y-auto*/}  {/*overflow-y-auto*/} 
 
 
 
