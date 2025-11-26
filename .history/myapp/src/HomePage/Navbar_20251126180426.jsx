@@ -136,7 +136,7 @@ const { t, i18n } = useTranslation();
   </Link>
 
 {/* overflow-x-hidden */}
-  <div className="lg:flex gap-8  2xl:w-[530px]  justify-end  xl:w-[500px] lg:w-[490px]     ">
+  <div className="lg:flex gap-8  2xl:w-[540px]  justify-end  xl:w-[500px] lg:w-[490px]     ">
     {links.map(link => (
       <a key={link.id} href={`#${link.id}`} onClick={handleClick} className={styles.navlink}>
         {t(`navbar.${link.id}`)}
