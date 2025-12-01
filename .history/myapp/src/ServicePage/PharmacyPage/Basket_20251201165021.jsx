@@ -2,7 +2,6 @@ import React from "react";
 
 
 import { IoMdCloseCircleOutline } from "react-icons/io";
-import { FaTicket } from "react-icons/fa6";
 
 export default function Basket() {
   return (
@@ -74,13 +73,13 @@ export default function Basket() {
                 </div>
                 
                <div className="w-[23%]">
-                <div className=" flex items-center justify-center rounded-[18.5px] border-1  border-black/30 w-[107px] h-[40px] ">
+                <div className=" flex items-center justify-center rounded-[18.5px] border-1 w-[107px] h-[40px] ">
                        
-                      <div className=" flex justify-center   w-[17%] ">
-                         <p className="font-bold text-xl pb-1 ">-</p>
+                      <div className="w-[15%]">
+                         <p className="font-bold text-xl items-start">-</p>
                       </div>
 
-                      <div className=" border-l-1 border-r-1 border-black/30  h-full w-[50px] flex justify-center items-center  ">
+                      <div className=" border-l-1 border-r-1  h-full w-[50px] flex justify-center items-center  ">
                         <p>7</p>
                         </div>
 
@@ -125,56 +124,7 @@ export default function Basket() {
           
           </div>
 
-          <div className="  bg-[rgb(250,247,207)]   h-[500px] w-[25%] rounded-[30px] flex flex-col gap-4">
-
-            <div className="flex  justify-center items-center h-[70px] w-full">
-              <p className="text-[18px] font-bold">
-                Order Summary
-              </p>
-            </div>
-
-              <div className="border h-0 mx-[33px]  border-black/10"></div>
-
-              <div className="flex justify-between px-8 ">
-             
-                <div className="flex items-center gap-4">
-                  <FaTicket />
-                  <p>Apply Coupons</p>
-                </div>
-                <button className="bg-purple-400 rounded-2xl w-[68px] h-[30px]">Apply</button>
-              </div>
-
-              <div className="border h-0 mx-[33px]  border-black/10"></div>
-
-
-
-              <div className="">
-
-              <p className="px-8">Product Details:</p>
-
-              <div className=" flex justify-between px-8">  
-                <p>Sub total:</p>
-                <p>792.00$</p>
-              </div>
-
-              
-              <div className=" flex justify-between px-8">  
-                <p>Shipping:</p>
-                <p>08.00$</p>
-              </div>
-
-              <div className="border h-0 mx-[33px]  border-black/10"></div>
-
-
-             <div className=" flex justify-between px-8">  
-                <p>Grand Total</p>
-                <p>800.00$</p>
-              </div>
-              
-              </div>
-
-
-          </div>
+          <div className="bg-orange-300   h-[500px] w-[25%]"></div>
 
 
 

@@ -150,15 +150,15 @@ export default function Basket() {
 
               <div className="">
 
-              <p className="px-8">Product Details:</p>
+              <p>Product Details:</p>
 
-              <div className=" flex justify-between px-8">  
+              <div className=" flex justify-between px-4">  
                 <p>Sub total:</p>
                 <p>792.00$</p>
               </div>
 
               
-              <div className=" flex justify-between px-8">  
+              <div className=" flex justify-between px-4">  
                 <p>Shipping:</p>
                 <p>08.00$</p>
               </div>

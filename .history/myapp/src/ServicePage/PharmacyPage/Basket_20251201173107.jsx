@@ -125,7 +125,7 @@ export default function Basket() {
           
           </div>
 
-          <div className="  bg-[rgb(250,247,207)]   h-[500px] w-[25%] rounded-[30px] flex flex-col gap-4">
+          <div className=" flex flex-col gap-3 bg-[rgb(250,247,207)]   h-[500px] w-[25%] rounded-[30px]">
 
             <div className="flex  justify-center items-center h-[70px] w-full">
               <p className="text-[18px] font-bold">
@@ -133,7 +133,7 @@ export default function Basket() {
               </p>
             </div>
 
-              <div className="border h-0 mx-[33px]  border-black/10"></div>
+              <div className="border h-0 mx-[40px]  border-black/10"></div>
 
               <div className="flex justify-between px-8 ">
              
@@ -142,35 +142,6 @@ export default function Basket() {
                   <p>Apply Coupons</p>
                 </div>
                 <button className="bg-purple-400 rounded-2xl w-[68px] h-[30px]">Apply</button>
-              </div>
-
-              <div className="border h-0 mx-[33px]  border-black/10"></div>
-
-
-
-              <div className="">
-
-              <p className="px-8">Product Details:</p>
-
-              <div className=" flex justify-between px-8">  
-                <p>Sub total:</p>
-                <p>792.00$</p>
-              </div>
-
-              
-              <div className=" flex justify-between px-8">  
-                <p>Shipping:</p>
-                <p>08.00$</p>
-              </div>
-
-              <div className="border h-0 mx-[33px]  border-black/10"></div>
-
-
-             <div className=" flex justify-between px-8">  
-                <p>Grand Total</p>
-                <p>800.00$</p>
-              </div>
-              
               </div>
 
 

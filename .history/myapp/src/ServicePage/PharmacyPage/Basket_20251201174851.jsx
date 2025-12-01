@@ -125,7 +125,7 @@ export default function Basket() {
           
           </div>
 
-          <div className="  bg-[rgb(250,247,207)]   h-[500px] w-[25%] rounded-[30px] flex flex-col gap-4">
+          <div className="  bg-[rgb(250,247,207)]   h-[500px] w-[35%] rounded-[30px] flex flex-col gap-4">
 
             <div className="flex  justify-center items-center h-[70px] w-full">
               <p className="text-[18px] font-bold">

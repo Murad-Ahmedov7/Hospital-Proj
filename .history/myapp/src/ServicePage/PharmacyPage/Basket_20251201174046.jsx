@@ -146,31 +146,26 @@ export default function Basket() {
 
               <div className="border h-0 mx-[33px]  border-black/10"></div>
 
-
-
               <div className="">
 
-              <p className="px-8">Product Details:</p>
+              <p>Product Details:</p>
 
-              <div className=" flex justify-between px-8">  
+              <div className=" flex justify-between px-22">  
                 <p>Sub total:</p>
                 <p>792.00$</p>
               </div>
 
               
-              <div className=" flex justify-between px-8">  
-                <p>Shipping:</p>
-                <p>08.00$</p>
+              <div className=" flex justify-between px-22">  
+                <p>Sub total:</p>
+                <p>792.00$</p>
               </div>
-
+          
+                <p>  Product Details:</p>
               <div className="border h-0 mx-[33px]  border-black/10"></div>
+                <p>Grand Total  </p>
 
 
-             <div className=" flex justify-between px-8">  
-                <p>Grand Total</p>
-                <p>800.00$</p>
-              </div>
-              
               </div>
 
 

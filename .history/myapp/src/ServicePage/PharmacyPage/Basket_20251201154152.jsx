@@ -2,7 +2,6 @@ import React from "react";
 
 
 import { IoMdCloseCircleOutline } from "react-icons/io";
-import { FaTicket } from "react-icons/fa6";
 
 export default function Basket() {
   return (
@@ -28,7 +27,7 @@ export default function Basket() {
 
 
             <div className="flex">
-              <p className="text-oswald text-[15px] text-[#4e4e4e] font-bold w-[35.6%] ">
+              <p className="text-oswald text-[15px] text-[#4e4e4e] font-bold w-[35%] ">
                 Product Details
               </p>
               <p className="text-oswald text-[15px] text-[#4e4e4e] font-bold w-[22%]  ">
@@ -47,7 +46,7 @@ export default function Basket() {
 
             <div className=" lg:w-[70vw] xl:w-[50vw] h-[400px] ">
 
-              <div className="flex w-full items-center  "> {/*bir row*/}
+              <div className="flex w-full "> {/*bir row*/}
 
 
                 <div className="flex gap-5 w-[35%]  ">   {/*sekil ve aciqlamalari*/} 
@@ -69,31 +68,16 @@ export default function Basket() {
                 </div>
 
 
-                <div className="w-[21%]">
+                <div className="w-[22%]">
                   <p className="text-xl">48.00$</p>
                 </div>
-                
-               <div className="w-[23%]">
-                <div className=" flex items-center justify-center rounded-[18.5px] border-1  border-black/30 w-[107px] h-[40px] ">
-                       
-                      <div className=" flex justify-center   w-[17%] ">
-                         <p className="font-bold text-xl pb-1 ">-</p>
-                      </div>
-
-                      <div className=" border-l-1 border-r-1 border-black/30  h-full w-[50px] flex justify-center items-center  ">
-                        <p>7</p>
-                        </div>
-
-                      <div className="flex justify-center  w-[25%]  ">
-                         <p className="font-bold text-xl">+</p>
-                      </div>
-
+               <div className="w-[22%]">
+                  
                 </div>
-               </div>
                <div className="">
                   <p className="text-xl">144.00</p>
                 </div>
-                <div className="flex w-[15%] h-[100px] pt-[24px]  justify-end ">
+                <div className="flex w-[15%] h-[100px] mt-[-10px]  justify-end ">
                   <IoMdCloseCircleOutline  size={50} color="red" />
                 </div>
                
@@ -125,56 +109,7 @@ export default function Basket() {
           
           </div>
 
-          <div className="  bg-[rgb(250,247,207)]   h-[500px] w-[25%] rounded-[30px] flex flex-col gap-4">
-
-            <div className="flex  justify-center items-center h-[70px] w-full">
-              <p className="text-[18px] font-bold">
-                Order Summary
-              </p>
-            </div>
-
-              <div className="border h-0 mx-[33px]  border-black/10"></div>
-
-              <div className="flex justify-between px-8 ">
-             
-                <div className="flex items-center gap-4">
-                  <FaTicket />
-                  <p>Apply Coupons</p>
-                </div>
-                <button className="bg-purple-400 rounded-2xl w-[68px] h-[30px]">Apply</button>
-              </div>
-
-              <div className="border h-0 mx-[33px]  border-black/10"></div>
-
-
-
-              <div className="">
-
-              <p className="px-8">Product Details:</p>
-
-              <div className=" flex justify-between px-8">  
-                <p>Sub total:</p>
-                <p>792.00$</p>
-              </div>
-
-              
-              <div className=" flex justify-between px-8">  
-                <p>Shipping:</p>
-                <p>08.00$</p>
-              </div>
-
-              <div className="border h-0 mx-[33px]  border-black/10"></div>
-
-
-             <div className=" flex justify-between px-8">  
-                <p>Grand Total</p>
-                <p>800.00$</p>
-              </div>
-              
-              </div>
-
-
-          </div>
+          <div className="bg-orange-300   h-[500px] w-[25%]"></div>
 
 
 
