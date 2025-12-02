@@ -260,9 +260,7 @@ export default function Pharmacy() {
 
   return (
     <div className="bg-gradient-to-bl  min-h-screen ">
-      
-      <PharmacyHero/>
-      
+      <PharmacyHero
       <PopularCategories categories={categories}/>
 
        <MostLikedProducts slides={slides}/>

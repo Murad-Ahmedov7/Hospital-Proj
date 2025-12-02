@@ -135,7 +135,8 @@ export default function Basket() {
 
               <div className="border h-0 mx-[33px]  border-black/10"></div>
 
-              <div className="flex justify-between px-8">
+              <div className="flex justify-between px-8 ">
+             
                 <div className="flex items-center gap-4">
                   <FaTicket />
                   <p>Apply Coupons</p>
@@ -162,7 +163,8 @@ export default function Basket() {
                 <p>08.00$</p>
               </div>
 
-              <div className="border h-0 mx-[33px]  border-black/10"></div> 
+              <div className="border h-0 mx-[33px]  border-black/10"></div>
+
 
              <div className=" flex justify-between px-8">  
                 <p>Grand Total</p>

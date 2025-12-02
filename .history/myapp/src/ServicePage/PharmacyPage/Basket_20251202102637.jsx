@@ -162,7 +162,8 @@ export default function Basket() {
                 <p>08.00$</p>
               </div>
 
-              <div className="border h-0 mx-[33px]  border-black/10"></div> 
+              <div className="border h-0 mx-[33px]  border-black/10"></div>
+              <div className=""></div>
 
              <div className=" flex justify-between px-8">  
                 <p>Grand Total</p>

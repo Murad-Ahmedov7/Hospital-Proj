@@ -251,7 +251,6 @@ import MostLikedProducts from "./MostLikedProducts";
 import FeaturedProducts from "./FeaturedProducts";
 import { categories, slides } from "../../data/data";
 import { useState } from "react";
-import PharmacyHero from "./PharmacyHero";
 
 
 export default function Pharmacy() {
@@ -260,8 +259,6 @@ export default function Pharmacy() {
 
   return (
     <div className="bg-gradient-to-bl  min-h-screen ">
-      
-      <PharmacyHero/>
       
       <PopularCategories categories={categories}/>
 

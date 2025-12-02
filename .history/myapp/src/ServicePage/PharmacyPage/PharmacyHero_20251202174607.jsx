@@ -1,0 +1,10 @@
+
+import React from 'react'
+
+export default function PharmacyHero() {
+  return (
+    <div className='bg-[#32b9d1] h-screen pt-[72px]'>
+      <p>ddfdfdfd</p>
+    </div>
+  )
+}
