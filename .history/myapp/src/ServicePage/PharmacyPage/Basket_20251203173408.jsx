@@ -159,7 +159,7 @@ const decreaseCount=()=>{
 
               <div className="flex justify-between px-8">
                 <div className="flex items-center gap-4">
-                  <FaTicket color="#5c45bf" />
+                  <FaTicket color="bg-[#5c45bf]" />
                   <p className="font-bold font-oswald ">Apply Coupons</p>
                 </div>
                 <button className="bg-[#5c45bf] rounded-2xl w-[68px] h-[30px] font-oswald text-white">Apply</button>
@@ -187,8 +187,8 @@ const decreaseCount=()=>{
               <div className="border h-0 mx-[33px] mt-7  border-black/10"></div> 
 
              <div className=" flex justify-between items-center h-[50px] px-8">  
-                <p className="font-bold font-oswald">Grand Total</p>
-                <p className="text-[#5c45bf] font-bold font-oswald">$800.00</p>
+                <p className="font-bold">Grand Total</p>
+                <p>$800.00</p>
               </div>
               
               </div>

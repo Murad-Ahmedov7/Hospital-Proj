@@ -1,32 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { FaTicket } from "react-icons/fa6";
 
-
-
-
-
 export default function Basket() {
-
-
-  const [productQuantity,setProductQuantity]=useState(7)
-  const [itemsCount,setItemsCount]=useState(1)
-
-const increaseCount=()=>{
-  setProductQuantity(prev=>prev+1)
-}
-
-const decreaseCount=()=>{
-  setProductQuantity(prev=>{
-    if(prev===0) return 0
-    return prev-1
-  })
- 
-}
-
-
   return (
     <div className=" flex min-h-screen w-screen justify-center items-center pt-[72px]  ">
       {" "}
@@ -42,7 +20,7 @@ const decreaseCount=()=>{
 
             <div className="flex justify-between ">
               <p className="text-oswald text-xl font-bold"> Shopping Cart</p>
-              <p className="text-oswald text-xl font-bold">({`0${itemsCount}items`})</p>
+              <p className="text-oswald text-xl font-bold">(04 Items)</p>
             </div>
             <div className="border h-0  border-black/10"></div>
 
@@ -99,15 +77,15 @@ const decreaseCount=()=>{
                 <div className=" flex items-center justify-center rounded-[18.5px] border-1  border-black/30 w-[107px] h-[40px] ">
                        
                       <div className=" flex justify-center   w-[17%] ">
-                         <button onClick={decreaseCount} className="font-bold text-xl pb-1 ">-</button>
+                         <button onClick={()=>console.log("Menfiye click edildi")} className="font-bold text-xl pb-1 ">-</button>
                       </div>
 
                       <div className=" border-l-1 border-r-1 border-black/30  h-full w-[50px] flex justify-center items-center  ">
-                        <p>{productQuantity}</p>
+                        <p>7</p>
                         </div>
 
                       <div className="flex justify-center  w-[25%]  ">
-                         <button onClick={increaseCount} className="font-bold text-xl">+</button>
+                         <p className="font-bold text-xl">+</p>
                       </div>
 
                 </div>
@@ -147,10 +125,10 @@ const decreaseCount=()=>{
           
           </div>
 
-          <div className="  bg-yellow-200/20   h-[500px] w-[23%] rounded-[30px] flex flex-col gap-4">
+          <div className="  bg-[rgb(250,247,207)]   h-[500px] w-[25%] rounded-[30px] flex flex-col gap-4">
 
             <div className="flex  justify-center items-center h-[70px] w-full">
-              <p className="text-[18px] font-bold font-oswald ">
+              <p className="text-[18px] font-bold">
                 Order Summary
               </p>
             </div>
@@ -159,43 +137,40 @@ const decreaseCount=()=>{
 
               <div className="flex justify-between px-8">
                 <div className="flex items-center gap-4">
-                  <FaTicket color="#5c45bf" />
-                  <p className="font-bold font-oswald ">Apply Coupons</p>
+                  <FaTicket />
+                  <p>Apply Coupons</p>
                 </div>
-                <button className="bg-[#5c45bf] rounded-2xl w-[68px] h-[30px] font-oswald text-white">Apply</button>
+                <button className="bg-purple-400 rounded-2xl w-[68px] h-[30px]">Apply</button>
               </div>
 
               <div className="border h-0 mx-[33px]  border-black/10"></div>
 
 
 
-              <div className="flex flex-col gap-2">
+              <div className="">
 
-              <p className="px-8 font-oswald font-bold text-[16px]">Product Details:</p>
+              <p className="px-8">Product Details:</p>
 
               <div className=" flex justify-between px-8">  
-                <p className="font-oswald">Sub total:</p> 
-                <p className="font-oswald font-bold">$792.00</p>
+                <p>Sub total:</p>
+                <p>792.00$</p>
               </div>
 
               
               <div className=" flex justify-between px-8">  
-                <p className="font-oswald">Shipping</p>
-                <p className="font-bold font-oswald">$08.00</p>
+                <p>Shipping:</p>
+                <p>08.00$</p>
               </div>
 
-              <div className="border h-0 mx-[33px] mt-7  border-black/10"></div> 
+              <div className="border h-0 mx-[33px]  border-black/10"></div> 
 
-             <div className=" flex justify-between items-center h-[50px] px-8">  
-                <p className="font-bold font-oswald">Grand Total</p>
-                <p className="text-[#5c45bf] font-bold font-oswald">$800.00</p>
+             <div className=" flex justify-between px-8">  
+                <p>Grand Total</p>
+                <p>800.00$</p>
               </div>
               
               </div>
 
-            <button className="w-[85%] mx-auto py-4  bg-yellow-200 rounded-full  font-oswald font-bold ">
-              Proceed to checkout
-            </button>
 
           </div>
 

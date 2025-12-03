@@ -147,7 +147,7 @@ const decreaseCount=()=>{
           
           </div>
 
-          <div className="  bg-yellow-200/20   h-[500px] w-[23%] rounded-[30px] flex flex-col gap-4">
+          <div className="  bg-[rgb(250,247,207)]   h-[500px] w-[23%] rounded-[30px] flex flex-col gap-4">
 
             <div className="flex  justify-center items-center h-[70px] w-full">
               <p className="text-[18px] font-bold font-oswald ">
@@ -159,10 +159,10 @@ const decreaseCount=()=>{
 
               <div className="flex justify-between px-8">
                 <div className="flex items-center gap-4">
-                  <FaTicket color="#5c45bf" />
+                  <FaTicket color="#32b9d1" />
                   <p className="font-bold font-oswald ">Apply Coupons</p>
                 </div>
-                <button className="bg-[#5c45bf] rounded-2xl w-[68px] h-[30px] font-oswald text-white">Apply</button>
+                <button className="bg-[#32b9d1] rounded-2xl w-[68px] h-[30px] font-oswald text-white">Apply</button>
               </div>
 
               <div className="border h-0 mx-[33px]  border-black/10"></div>
@@ -186,14 +186,14 @@ const decreaseCount=()=>{
 
               <div className="border h-0 mx-[33px] mt-7  border-black/10"></div> 
 
-             <div className=" flex justify-between items-center h-[50px] px-8">  
-                <p className="font-bold font-oswald">Grand Total</p>
-                <p className="text-[#5c45bf] font-bold font-oswald">$800.00</p>
+             <div className=" flex justify-between items-center h-[60px] px-8">  
+                <p className="font-bold">Grand Total</p>
+                <p>$800.00</p>
               </div>
               
               </div>
 
-            <button className="w-[85%] mx-auto py-4  bg-yellow-200 rounded-full  font-oswald font-bold ">
+            <button className="w-[85%] mx-auto py-4  bg-yellow-300 rounded-full ">
               Proceed to checkout
             </button>
 

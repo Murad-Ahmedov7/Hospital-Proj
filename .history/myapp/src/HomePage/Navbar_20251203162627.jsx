@@ -247,6 +247,6 @@ const { t, i18n } = useTranslation();
 
 
 
-// Parametr və ya əlavə əməliyyat yoxdursa → sadəcə onClick={handleClick}
+Parametr və ya əlavə əməliyyat yoxdursa → sadəcə onClick={handleClick}
 
 // Parametr və ya əlavə əməliyyat varsa → onClick={() => handleClick(param)}

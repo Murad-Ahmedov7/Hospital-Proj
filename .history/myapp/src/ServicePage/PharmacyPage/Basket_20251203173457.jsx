@@ -188,7 +188,7 @@ const decreaseCount=()=>{
 
              <div className=" flex justify-between items-center h-[50px] px-8">  
                 <p className="font-bold font-oswald">Grand Total</p>
-                <p className="text-[#5c45bf] font-bold font-oswald">$800.00</p>
+                <p className="text-[#5c45bf]">$800.00</p>
               </div>
               
               </div>
