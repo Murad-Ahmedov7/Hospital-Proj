@@ -32,7 +32,7 @@ export default function PharmacyHero() {
                   </li>
                 </ul>
 
-                <p className="lg:text-6xl  xl:text-7xl 2xl:text-[84px]  mt-7 text-white font-oswald  font-bold">Instant Pharmacy Access For You </p>
+                <p className="lg:text-5xl  xl:text-6xl 2xl:text-8xl  mt-7 text-white font-oswald  font-bold">Instant Pharmacy Access For You </p>
                 
                 
 

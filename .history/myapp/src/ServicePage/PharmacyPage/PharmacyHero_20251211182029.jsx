@@ -8,7 +8,7 @@ export default function PharmacyHero() {
     <div className="w-full pt-[72px]">
       <div className="flex justify-center items-center relative">
         <img className="rounded-4xl w-[90%] min-h-screen" src="/images/cyan-bg.png"/>
-        <div className=" inner-content flex flex-col lg:gap-[40px] 2xl:gap-[80px]    absolute w-[77%] h-[80%] ">
+        <div className=" inner-content flex flex-col lg: 2xl:gap-[80px]    absolute w-[77%] h-[80%] ">
 
           <div className="row-up flex w-[97%]">
             <div className="outer-left w-[65%]">
@@ -32,7 +32,7 @@ export default function PharmacyHero() {
                   </li>
                 </ul>
 
-                <p className="lg:text-6xl  xl:text-7xl 2xl:text-[84px]  mt-7 text-white font-oswald  font-bold">Instant Pharmacy Access For You </p>
+                <p className="lg:text-6xl  xl:text-7xl 2xl:text-8xl max-w-[987px] mt-7 text-white font-oswald  font-bold">Instant Pharmacy Access For You </p>
                 
                 
 

@@ -1,0 +1,17 @@
+
+
+
+export default function PharmacyHero() {
+  return (
+    <div className="w-full pt-[72px]">
+      <div className="flex justify-center">
+        <img className="rounded-2xl w-[90%]" src="/images/cyan-bg.png"/>
+        <p className="absolute">Health</p>
+      </div>
+
+    </div>
+  )
+}
+
+
+// https://chatgpt.com/c/692f0b1d-7970-8331-a1ff-7e31cf9e913b

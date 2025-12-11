@@ -7,8 +7,8 @@ export default function PharmacyHero() {
   return (
     <div className="w-full pt-[72px]">
       <div className="flex justify-center items-center relative">
-        <img className="rounded-4xl w-[90%] min-h-screen" src="/images/cyan-bg.png"/>
-        <div className=" inner-content flex flex-col lg:gap-[40px] 2xl:gap-[80px]    absolute w-[77%] h-[80%] ">
+        <img className="rounded-2xl w-[90%]" src="/images/cyan-bg.png"/>
+        <div className=" inner-content flex   absolute w-[86%] h-[80%] ">
 
           <div className="row-up flex w-[97%]">
             <div className="outer-left w-[65%]">
@@ -32,7 +32,7 @@ export default function PharmacyHero() {
                   </li>
                 </ul>
 
-                <p className="lg:text-6xl  xl:text-7xl 2xl:text-[84px]  mt-7 text-white font-oswald  font-bold">Instant Pharmacy Access For You </p>
+                <p className="text-8xl w-[987px] mt-7 text-white font-oswald  font-bold">Instant Pharmacy Access For You </p>
                 
                 
 
@@ -61,7 +61,7 @@ export default function PharmacyHero() {
               <p className="text-2xl text-white font-bold font-oswald ">Order prescription and over-the-counter medicines online with confidence. </p>
 
               <div className="w-full flex gap-4">
-                <button className="bg-yellow-300/80 w-[170px] hover:scale-105 transition-all duration-500  rounded-4xl">Shop Now</button>
+                <button className="bg-yellow-400/70 w-[170px] rounded-4xl">Shop Now</button>
                 <button className=" flex items-center border-dashed border-2 rounded-4xl px-4 py-2 border-white text-white font-bold">     <GrFormUpload size={30} />  Upload Prescription</button>
               </div>
             </div>
@@ -69,13 +69,7 @@ export default function PharmacyHero() {
 
           </div>
 
-         <div className="row-down flex w-[97%] gap-5">
-            <img className="rounded-2xl w-[65%] h-[100%]" src="/images/banner-img1.jpg" alt="Picture not available" />
-            <img className="rounded-2xl w-[35%] h-[100%]" src="/images/banner-img2.jpg" alt="Picture not available" />
-          </div>
 
-          
-          
         </div>
       </div>
 
