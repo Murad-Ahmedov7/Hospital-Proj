@@ -1,0 +1,77 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "apps": "Apps",
+    "testimonials": "Testimonials",
+    "about-us": "About Us",
+    "myShopping": {
+      "title": "My Shopping",
+      "balance": "Balance",
+      "compare": "Compare",
+      "basket": "Basket",
+      "favorites": "Favorites"
+    },
+    "signup": "Sign Up"
+  },
+  
+  "home": {
+    "headline": "Virtual healthcare for you",
+    "description": "Mediflow provides progressive, and affordable healthcare, accessible on mobile and online for everyone"
+  },
+
+  "services": {
+    "headline": "Our Services",
+    "description": "We provide to you the best choices for you. Adjust it to your health needs and make sure you undergo treatment with our highly qualified doctors to consult which type of service is suitable for your health.",
+    "serviceList": [
+      {
+        "title": "Search Doctor",
+        "desc": "Choose your doctor from thousands of specialists, general, and trusted hospitals",
+        "img": "/images/services/Frame.png",
+        "width": "w-[100px]",
+        "height": "h-[100px]",
+        "link": "services/doctor"
+      },
+      {
+        "title": "Online pharmacy",
+        "desc": "Buy your medicines with our mobile application with a simple delivery system",
+        "img": "/images/services/Group.png",
+        "width": "w-[80px]",
+        "height": "h-[100px]",
+        "link": "services/pharmacy"
+      },
+      {
+        "title": "Consultation",
+        "desc": "Free consultation with our trusted doctors and get the best recommendations",
+        "img": "/images/services/Frame (1).png",
+        "width": "w-[80px]",
+        "height": "h-[100px]",
+        "link": "services/consultation"
+      },
+      {
+        "title": "Details Info",
+        "desc": "Free consultation with our trusted doctors and get the best recommendations",
+        "img": "/images/services/Frame (2).png",
+        "width": "w-[80px]",
+        "height": "h-[100px]",
+        "link": "services/info"
+      },
+      {
+        "title": "Emergency care",
+        "desc": "You can get 24/7 urgent care for yourself or your children and your lovely family",
+        "img": "/images/services/Frame (3).png",
+        "width": "w-[95px]",
+        "height": "h-[100px]",
+        "link": "services/emergency"
+      },
+      {
+        "title": "Tracking",
+        "desc": "Track and save your medical history and health data",
+        "img": "/images/Frame (4).png",
+        "width": "w-[80px]",
+        "height": "h-[100px]",
+        "link": "services/tracking"
+      }
+    ]
+  }
+}
