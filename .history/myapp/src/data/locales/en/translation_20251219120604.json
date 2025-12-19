@@ -1,0 +1,53 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "apps": "Apps",
+    "testimonials": "Testimonials",
+    "about-us": "About Us",
+    "myShopping": {
+      "title": "My Shopping",
+      "balance": "Balance",
+      "compare": "Compare",
+      "basket": "Basket",
+      "favorites": "Favorites"
+    },
+    "signup": "Sign Up"
+  },
+  
+  "home": {
+    "headline": "Virtual healthcare for you",
+    "description": "Mediflow provides progressive, and affordable healthcare, accessible on mobile and online for everyone"
+  },
+
+   "services": {
+    "headline": "Our Services",
+    "description": "We provide the best options. Choose the service type suitable for your health needs and consult with our highly qualified doctors.",
+    "serviceList": {
+      "searchDoctor": {
+        "title": " Departments",
+        "desc": "Discover departments and access doctors, treatments, and consultation services"
+      },
+      "onlinePharmacy": {
+        "title": "Online pharmacy",
+        "desc": "Buy your medicines with our mobile application with a simple delivery system"
+      },
+      "consultation": {
+        "title": "Consultation",
+        "desc": "Free consultation with our trusted doctors and get the best recommendations"
+      },
+      "detailsInfo": {
+        "title": "Details Info",
+        "desc": "Free consultation with our trusted doctors and get the best recommendations"
+      },
+      "emergencyCare": {
+        "title": "Emergency care",
+        "desc": "You can get 24/7 urgent care for yourself or your children and your lovely family"
+      },
+      "tracking": {
+        "title": "Tracking",
+        "desc": "Track and save your medical history and health data"
+      }
+    }
+  }
+}

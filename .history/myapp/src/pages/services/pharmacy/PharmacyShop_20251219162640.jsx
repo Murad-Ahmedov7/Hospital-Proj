@@ -1,0 +1,155 @@
+
+
+import React, { useState } from "react";
+import Card from "../../../components/Card";
+import * as Slider from "@radix-ui/react-slider";
+import { slides2 } from "../../../data/data";
+
+export default function PharmacyShop() {
+
+
+    const {
+    value,
+    handleValueChange,
+  } = PharmacyShopVm();
+
+  return (
+    <div className="w-screen min-h-screen flex     ">
+
+       {/* sol terefin containeri */}
+      <div className=" lg:w-[28%] xl:w-[25%] flex flex-col  gap-10 items-end min-h-screen mt-[150px]     mr-5 "> 
+
+        <div className="flex flex-col gap-7  items-center">
+
+          <div className="flex flex-col gap-5 ">
+
+            <p className="font-oswald font-bold text-2xl ">Categories: </p>
+            {[...Array(5)].map((_, i) => (
+              <div className="">
+                <label className="flex items-center gap-2 cursor-pointer">
+                  <input type="checkbox" className="hidden peer" />
+
+                  <div className="w-4 h-4 rounded-full border border-gray-500 peer-checked:bg-green-600"></div>
+
+                  <p>Baby Care & Essentials</p>
+                </label>
+                
+              </div>
+              
+            ))
+            }
+       
+          <div className="border-1  opacity-10 w-70 "></div> 
+
+          </div>
+
+
+
+
+
+
+          
+        </div>
+
+  
+      {/*men faiz ile bu divi yazanda niye islemedi*/}
+      <div className="flex flex-col  w-[450px] items-end gap-4 "> 
+      {/* <div className="flex flex-col  w-[76%] items-end gap-4 "> */}
+
+         
+      <p className="text-2xl font-oswald  font-bold w-[76%] text-start pl-15 ">Filter by Price</p>
+        <Slider.Root
+          className="relative flex items-center w-[63%] h-4"
+          value={value}
+          onValueChange={handleValueChange}
+          step={5}
+          aria-label="Price range"
+        >
+          <Slider.Track className="bg-gray-300 relative w-full rounded-full h-1">
+            <Slider.Range className="absolute bg-cyan-500 rounded-full h-full" />
+          </Slider.Track>
+          <Slider.Thumb className="block w-4 h-4 bg-cyan-500 rounded-full" />
+          <Slider.Thumb className="block w-4 h-4 bg-cyan-500 rounded-full" />
+        </Slider.Root>
+        
+          <div className="flex gap-2 justify-start items-center  w-[62%]">
+          <p className="">Range:</p>
+          <p className="text-cyan-500  text-xl font-bold">{`${value[0]}$-`}</p>
+          
+          <p className="text-cyan-500 text-xl font-bold">{`${value[1]}$`}</p>
+
+          </div>
+
+
+
+      </div>
+
+      </div>
+
+   
+
+        {/* all cards */}
+      <div className="w-[80%] mt-14    grid 2xl:grid-cols-3 2xl:grid-rows-3 lg:grid-cols-2    gap-5 p-4">
+                {slides2.map((s) => ( 
+          <Card s={s} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+
+
+
+// https://chatgpt.com/c/69283e36-6e48-8330-b82b-7e44ea7f4211(nece duzeltdim buradki responsivliyi)
+
+
+
+
+
+
+
+
+    //  lg:mt-[2000px] xl:mt-[810px]
+
+
+// Slider.Root → sliderın özü
+
+// Slider.Track → arxa plan track (boz)
+
+// Slider.Range → seçilmiş qiymət aralığı (yaşıl)
+
+// Slider.Thumb → hərəkət edən düymələr (circle)
+
+
+
+      {/* <Slider.Root
+          defaultValue={[0, 1000]}
+          min={0}
+          max={10000}
+          className="relative flex items-center w-80 h-4 bg-gray-100 rounded-full p-1 "
+        >
+          <Slider.Track className="bg-gray-300 relative grow rounded-full h-1">
+            <Slider.Range className="absolute bg-green-500 rounded-full h-full" />
+          </Slider.Track>
+          <Slider.Thumb className="block w-4 h-4 bg-green-500 rounded-full" />
+          <Slider.Thumb className="block w-4 h-4 bg-green-500 rounded-full" />
+        </Slider.Root> */}
+
+
+           {/* 
+      newMax !== oldMax → sağ Thumb hərəkət edib.
+
+      if (newMax - newMin < MIN_DISTANCE) → minimum məsafə pozulub?
+
+      newMin = newMax - MIN_DISTANCE → sol Thumb-u itələyirik, yəni sağ Thumb yaxınlaşanda sol Thumb da gedir.
+
+      if (newMin < MIN_VALUE) → sol Thumb 0-dan kiçik olmasın deyə yoxlayırıq.
+
+      Əgər sol Thumb 0-dan kiçik olarsa, sol Thumb-u MIN_VALUE-də saxlayırıq.
+
+      Sağ Thumb-u da buna uyğun itələyirik (newMax = newMin + MIN_DISTANCE). */}
+
+
+
+
