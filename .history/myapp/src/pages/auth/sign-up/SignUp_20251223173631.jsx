@@ -34,33 +34,16 @@ export default function SignUp() {
           <div className="text-white flex flex-col items-center gap-4 ">
             <p className="text-white text-4xl  font-bold ">Create an account</p>
             <div className="flex gap-1">
-              <p>Already have account?</p>
+                  <p>Already have account?</p>
               <Link to="/auth/login" className="text-cyan-400 underline">
-                Sign in
+              Sign in
               </Link>
             </div>
           </div>
 
+          
           <div className="flex flex-col gap-1 sm:w-[80%] xl:w-[70%] ">
-            <label className="   text-white/90 font-bold">Full name</label>
-            <input
-              type="text"
-              placeholder="Enter your name"
-              className=" px-4 py-3 rounded-lg bg-white/90
-              
-            text-black text-base font-medium
-            placeholder:text-gray-400 placeholder:text-md
-
-              focus:outline-none
-              focus:ring-2 focus:ring-cyan-400
-              focus:placeholder:text-transparent
-
-              shadow-xl border border-white/20"
-            />
-          </div>
-
-          <div className="flex flex-col gap-1 sm:w-[80%] xl:w-[70%] ">
-            <label className="   text-white/90 font-bold">Email</label>
+            <label className="   text-white/90 font-bold">Full Name</label>
             <input
               type="text"
               placeholder="Enter your email"
@@ -77,27 +60,24 @@ export default function SignUp() {
             />
           </div>
 
-          <div className="flex flex-col gap-1 sm:w-[80%] xl:w-[70%]">
-            <label className="text-white/90 font-bold">Phone</label>
-
+           <div className="flex flex-col gap-1 sm:w-[80%] xl:w-[70%] ">
+            <label className="   text-white/90 font-bold">Email</label>
             <input
               type="text"
-              placeholder="+994 -- --- -- --"
-              className="
-      px-4 py-3 rounded-lg bg-white/90
+              placeholder="Enter your email"
+              className=" px-4 py-3 rounded-lg bg-white/90
+              
+            text-black text-base font-medium
+            placeholder:text-gray-400 placeholder:text-md
 
-      text-black text-base font-medium
-      placeholder:text-gray-400 placeholder:text-md
+              focus:outline-none
+              focus:ring-2 focus:ring-cyan-400
+              focus:placeholder:text-transparent
 
-      focus:outline-none
-      focus:ring-2 focus:ring-cyan-400
-      focus:placeholder:text-transparent
-
-      shadow-xl border border-white/20
-    "
+              shadow-xl border border-white/20"
             />
           </div>
-
+       
           <div className="flex flex-col gap-1 sm:w-[80%] xl:w-[70%]">
             <label className="text-white/90 font-bold">Password</label>
 
@@ -119,35 +99,34 @@ export default function SignUp() {
             />
           </div>
 
-          <div className="flex flex-col gap-1 sm:w-[80%] xl:w-[70%]">
-            <label className="text-white/90 font-bold">Confirm Password</label>
+          <div className="flex  lg:w-[80%] sm:w-[80%] xl:w-[70%] justify-between">
 
-            <input
-              type="text"
-              placeholder="Confirm password"
-              className="
-      px-4 py-3 rounded-lg bg-white/90
+            <div className="flex gap-3">
+                  <input type="checkbox" />
+            <label className="text-white lg:text-sm xl:text-base font-bold">Remember me</label>
+            </div>
 
-      text-black text-base font-medium
-      placeholder:text-gray-400 placeholder:text-md
+            <Link className=" lg:text-sm  xl:text-base font-bold">Forgot password?</Link>
 
-      focus:outline-none
-      focus:ring-2 focus:ring-cyan-400
-      focus:placeholder:text-transparent
-
-      shadow-xl border border-white/20
-    "
-            />
           </div>
 
-          <div className="button-wrapper  sm:w-[80%] xl:w-[70%]">
-            <button
-              type="submit"
-              className="w-full py-3 bg-cyan-500 hover:bg-cyan-600 transition-colors duration-800 text-white font-semibold rounded-2xl"
-            >
-              Login
-            </button>
-          </div>
+
+         <div className="button-wrapper  sm:w-[80%] xl:w-[70%]">
+          <button
+            type="submit"
+            className="w-full py-3 bg-cyan-500 hover:bg-cyan-600 transition-colors duration-800 text-white font-semibold rounded-2xl"
+          >
+            Login
+          </button>
+        </div>
+
+      
+     
+
+
+
+
+
         </form>
       </div>
     </div>

@@ -22,7 +22,7 @@ export default function SignUp() {
         />
 
         {/* Panelin ortasındakı content */}
-        <form className="absolute inset-0 flex flex-col gap-10 pt-[70px]   justify-center items-center overflow-auto">
+        <form className="absolute inset-0 flex flex-col gap-10 pt-[40px]   justify-center items-center overflow-auto">
           <Link to="/" className="w-40">
             <img
               src="/images/mediflow-logo/mediflow-logo.png"

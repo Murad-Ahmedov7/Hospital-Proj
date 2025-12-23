@@ -124,7 +124,7 @@ export default function SignUp() {
 
             <input
               type="text"
-              placeholder="Confirm password"
+              placeholder="Enter your password"
               className="
       px-4 py-3 rounded-lg bg-white/90
 

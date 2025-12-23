@@ -119,12 +119,12 @@ export default function SignUp() {
             />
           </div>
 
-          <div className="flex flex-col gap-1 sm:w-[80%] xl:w-[70%]">
-            <label className="text-white/90 font-bold">Confirm Password</label>
+                <div className="flex flex-col gap-1 sm:w-[80%] xl:w-[70%]">
+            <label className="text-white/90 font-bold">Password</label>
 
             <input
               type="text"
-              placeholder="Confirm password"
+              placeholder="Enter your password"
               className="
       px-4 py-3 rounded-lg bg-white/90
 

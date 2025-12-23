@@ -1,3 +1,7 @@
+// import { Link } from "react-router-dom";
+
+export default function SignUp() {
+  return (
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -103,7 +107,7 @@ export default function Login() {
 
         <div className="text-white text-lg flex gap-2 ">
           Don't have an account? 
-          <Link to="/auth/sign-up" className="text-cyan-400 underline">
+          <Link to="/auth/signup" className="text-cyan-400 underline">
             Sign Up
           </Link>
         </div>
@@ -137,6 +141,5 @@ export default function Login() {
   );
 }
 
-// login ve register smartTour dan tam bax responsivliyine bax
-
-//object-cover menasi
+  );
+}

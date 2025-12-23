@@ -32,33 +32,16 @@ export default function SignUp() {
           </Link>
 
           <div className="text-white flex flex-col items-center gap-4 ">
-            <p className="text-white text-4xl  font-bold ">Create an account</p>
-            <div className="flex gap-1">
-              <p>Already have account?</p>
+            <p className="text-white text-4xl  font-bold ">SignUp Now!</p>
+            <div className="flex">
+                  <p>Already have account</p>
               <Link to="/auth/login" className="text-cyan-400 underline">
-                Sign in
+              Sign in
               </Link>
             </div>
           </div>
 
-          <div className="flex flex-col gap-1 sm:w-[80%] xl:w-[70%] ">
-            <label className="   text-white/90 font-bold">Full name</label>
-            <input
-              type="text"
-              placeholder="Enter your name"
-              className=" px-4 py-3 rounded-lg bg-white/90
-              
-            text-black text-base font-medium
-            placeholder:text-gray-400 placeholder:text-md
-
-              focus:outline-none
-              focus:ring-2 focus:ring-cyan-400
-              focus:placeholder:text-transparent
-
-              shadow-xl border border-white/20"
-            />
-          </div>
-
+          
           <div className="flex flex-col gap-1 sm:w-[80%] xl:w-[70%] ">
             <label className="   text-white/90 font-bold">Email</label>
             <input
@@ -77,27 +60,7 @@ export default function SignUp() {
             />
           </div>
 
-          <div className="flex flex-col gap-1 sm:w-[80%] xl:w-[70%]">
-            <label className="text-white/90 font-bold">Phone</label>
-
-            <input
-              type="text"
-              placeholder="+994 -- --- -- --"
-              className="
-      px-4 py-3 rounded-lg bg-white/90
-
-      text-black text-base font-medium
-      placeholder:text-gray-400 placeholder:text-md
-
-      focus:outline-none
-      focus:ring-2 focus:ring-cyan-400
-      focus:placeholder:text-transparent
-
-      shadow-xl border border-white/20
-    "
-            />
-          </div>
-
+       
           <div className="flex flex-col gap-1 sm:w-[80%] xl:w-[70%]">
             <label className="text-white/90 font-bold">Password</label>
 
@@ -119,35 +82,57 @@ export default function SignUp() {
             />
           </div>
 
-          <div className="flex flex-col gap-1 sm:w-[80%] xl:w-[70%]">
-            <label className="text-white/90 font-bold">Confirm Password</label>
+          <div className="flex  lg:w-[80%] sm:w-[80%] xl:w-[70%] justify-between">
 
-            <input
-              type="text"
-              placeholder="Confirm password"
-              className="
-      px-4 py-3 rounded-lg bg-white/90
+            <div className="flex gap-3">
+                  <input type="checkbox" />
+            <label className="text-white lg:text-sm xl:text-base font-bold">Remember me</label>
+            </div>
 
-      text-black text-base font-medium
-      placeholder:text-gray-400 placeholder:text-md
+            <Link className=" lg:text-sm  xl:text-base font-bold">Forgot password?</Link>
 
-      focus:outline-none
-      focus:ring-2 focus:ring-cyan-400
-      focus:placeholder:text-transparent
-
-      shadow-xl border border-white/20
-    "
-            />
           </div>
 
-          <div className="button-wrapper  sm:w-[80%] xl:w-[70%]">
-            <button
-              type="submit"
-              className="w-full py-3 bg-cyan-500 hover:bg-cyan-600 transition-colors duration-800 text-white font-semibold rounded-2xl"
-            >
-              Login
-            </button>
+
+         <div className="button-wrapper  sm:w-[80%] xl:w-[70%]">
+          <button
+            type="submit"
+            className="w-full py-3 bg-cyan-500 hover:bg-cyan-600 transition-colors duration-800 text-white font-semibold rounded-2xl"
+          >
+            Login
+          </button>
+        </div>
+
+        {/* <div className="text-white text-lg flex gap-2 ">
+          Don't have an account? 
+          <Link to="/auth/signup" className="text-cyan-400 underline">
+            Sign Up
+          </Link>
+        </div> */}
+   
+
+        {/* <div className="sm:w-[80%] xl:w-[70%] flex items-center  text-white">
+          <div className="border  h-0 w-[50%]  ">
           </div>
+            <p className="text-sm    text-nowrap ">Or Continue With</p>
+          <div className="border h-0 w-[43%]  ">
+          </div>
+      
+        </div> */}
+        <div className="sm:w-[80%] xl:w-[70%] flex items-center text-white">
+      <div className="flex-1 border-t border-white/50"></div>
+      <p className="text-sm  px-2">Or Continue With</p>
+      <div className="flex-1 border-t border-white/50"></div>
+      </div>
+
+    <button className="flex items-center gap-2 px-4 py-2 sm:w-[80%] xl:w-[70%] bg-white text-black rounded-2xl shadow hover:bg-gray-100 justify-center">
+      <img src="/images/google-button.png" alt="Google" className="w-4 h-4 sm:w-5 sm:h-5 object-contain" />
+
+      Continue with Google
+    </button>
+
+
+
         </form>
       </div>
     </div>

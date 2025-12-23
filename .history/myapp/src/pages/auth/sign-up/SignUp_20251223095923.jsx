@@ -1,7 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Login() {
+export default function SignUp() {
   return (
     <div className="relative w-screen min-h-screen  overflow-hidden">
       {/* Background image */}
@@ -33,7 +32,7 @@ export default function Login() {
           </Link>
 
           <div className="text-white flex flex-col items-center gap-4 ">
-            <p className="text-white text-4xl  font-bold ">Login Now!</p>
+            <p className="text-white text-4xl  font-bold ">SignUp Now!</p>
             <p className="text-white text-[16px]">
               Welcome back! Please enter your details
             </p>
@@ -103,7 +102,7 @@ export default function Login() {
 
         <div className="text-white text-lg flex gap-2 ">
           Don't have an account? 
-          <Link to="/auth/sign-up" className="text-cyan-400 underline">
+          <Link to="/auth/signup" className="text-cyan-400 underline">
             Sign Up
           </Link>
         </div>
@@ -136,7 +135,3 @@ export default function Login() {
     </div>
   );
 }
-
-// login ve register smartTour dan tam bax responsivliyine bax
-
-//object-cover menasi

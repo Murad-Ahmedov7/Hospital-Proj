@@ -77,9 +77,9 @@ export default function SignUp() {
             />
           </div>
 
-          <div className="flex flex-col gap-1 sm:w-[80%] xl:w-[70%]">
+                   <div className="flex flex-col gap-1 sm:w-[80%] xl:w-[70%]">
             <label className="text-white/90 font-bold">Phone</label>
-
+            
             <input
               type="text"
               placeholder="+994 -- --- -- --"
@@ -119,26 +119,7 @@ export default function SignUp() {
             />
           </div>
 
-          <div className="flex flex-col gap-1 sm:w-[80%] xl:w-[70%]">
-            <label className="text-white/90 font-bold">Confirm Password</label>
-
-            <input
-              type="text"
-              placeholder="Confirm password"
-              className="
-      px-4 py-3 rounded-lg bg-white/90
-
-      text-black text-base font-medium
-      placeholder:text-gray-400 placeholder:text-md
-
-      focus:outline-none
-      focus:ring-2 focus:ring-cyan-400
-      focus:placeholder:text-transparent
-
-      shadow-xl border border-white/20
-    "
-            />
-          </div>
+   
 
           <div className="button-wrapper  sm:w-[80%] xl:w-[70%]">
             <button
